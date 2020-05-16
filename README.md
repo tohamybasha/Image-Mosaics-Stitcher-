@@ -35,6 +35,7 @@ available. Do not worry about artifacts that result at the boundaries.
 # 5 Bonus
 1)Replace the manual correspondence stage with automatic interest point detection and
 local feature matching.
+
 2)Implement RANSAC for robustly estimating the homography matrix from noisy correspondences.
 Show with an example where it successfully gives good results even when
 there are outlier (bad) correspondences given as input.
