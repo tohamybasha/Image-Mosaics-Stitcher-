@@ -9,10 +9,10 @@ Write a function that takes a set of corresponding image points and computes the
 of H are stacked into an 8-vector x , the 2n-vector b contains image points from one view, and
 the 2n × 8 matrix A is filled appropriately so that the full system gives us λpJ = Hp . There
 are only 8 unknowns in H because we set H3,3 = 1. Solve for the unknown homography matrix
-parameters. [Useful numpy functions: ‘lstsq’, reshape]
+parameters.
 Verify that the homography matrix your function computes is correct by mapping the
 clicked image points from one view to the other, and displaying them on top of each respective
-image (matplotlib: imshow, followed by hold and plot). Be sure to handle homogenous and
+image. Be sure to handle homogenous and
 non-homogenous coordinates correctly.
 
 # 3 Warping between image planes
@@ -25,7 +25,6 @@ into the reference frame of the destination, and compute the bounding box in tha
 frame. Then sample all points in that destination bounding box from the proper coordinates
 in the source image (linear interpolation). Note that transforming all the points will generate
 an image of a different shape / dimensions than the original input.
-[Useful functions: numpy.meshgrid, scipy.interpolate.RectBivariateSpline]
 
 # 4 Create the output mosaic
 Once we have the source image warped into the destination images frame of reference, we can
